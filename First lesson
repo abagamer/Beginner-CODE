@@ -1,0 +1,11 @@
+while True:
+    cs = input("The number for the multiplication table:")
+    if cs.lower() == "exit":
+        print("End")
+        break
+    if cs.isdigit():
+        sdsd = int(cs)
+        for i in range(1, 11):
+            print(sdsd, "*", i, "=", sdsd*i)
+    else:
+        print("Write a number for the equation table or Exit to end the program.")
