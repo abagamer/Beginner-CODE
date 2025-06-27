@@ -1,0 +1,16 @@
+while True:
+    d = (input("Enter a number:")).strip().lower()
+    print("\n")
+    
+    if d == "0":
+        print("Все, кроме этого номера")
+    elif d.isdigit():
+        cs = int(d)
+        for i in range(1, 11):
+            print(cs, "*", i, "=", cs*i)
+        print("\n")
+    elif d == "break":
+        print("Ok, breaked")
+        break
+    else:
+        print("Its not a number! Try again")
